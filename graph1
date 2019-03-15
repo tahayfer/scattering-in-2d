@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x=[20,40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340]
+y=[24,23,39,55,50,40,48,83,82,93,70,65,66,65,38,24,34]
+
+yerr = np.sqrt(y)
+print(yerr)
+plt.bar(x,y,15,align='center',color = 'red')
+plt.xlabel('Angels')
+plt.ylabel('Counts')
+plt.title('Counts From 0 to 360 Degree')
+plt.xticks(x)
+plt.errorbar(x, y, yerr,fmt='x',ecolor='black')
+plt.show()
+
