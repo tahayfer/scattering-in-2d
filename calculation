@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x=[20,40,60,80,100,120,140,160,180]
+y=[58,47,77,120,116,105,118,176,164]
+yerr = np.sqrt(y)
+
+sin_half_x = []
+for i in x:
+    sin_half_x.append(np.sin(0.5*(i*np.pi)/180))
+    
+print(sin_half_x)
